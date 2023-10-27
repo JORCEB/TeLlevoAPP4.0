@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Solicitar Viaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Modelo del Auto</ion-label>
+      <ion-input [(ngModel)]="nuevoAuto.modelo" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Horario de Salida</ion-label>
+      <ion-input [(ngModel)]="nuevoAuto.horario" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Dirección de Salida</ion-label>
+      <ion-input [(ngModel)]="nuevoAuto.direccion" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Cupos Disponibles</ion-label>
+      <ion-input type="number" [(ngModel)]="nuevoAuto.cupos" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Valor del Viaje</ion-label>
+      <ion-input type="number" [(ngModel)]="nuevoAuto.valor" required></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" (click)="agregarAuto()">Agregar Auto</ion-button>
+</ion-content>

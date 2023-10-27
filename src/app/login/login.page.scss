@@ -1,0 +1,47 @@
+ion-content {
+  ion-content {
+    background-color: #ffffff;
+
+  }
+
+  background-color: #f4f4f4;
+
+  .login-card {
+    animation: fadeInUp 0.5s ease;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      font-size: 24px;
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    .login-button {
+      background-color: #007bff;
+      margin-top: 16px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .reset-button {
+      background-color: transparent;
+      color: #007bff;
+      margin-top: 8px;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

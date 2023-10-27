@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="!editing; else editProfileCard">
+    <ion-card-content>
+      <ion-label>Name: {{ user.name }}</ion-label>
+      <ion-label>Email: {{ user.email }}</ion-label>
+    </ion-card-content>
+  </ion-card>
+
+  <ng-template #editProfileCard>
+    <ion-card>
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Name</ion-label>
+          <ion-input [(ngModel)]="user.name" [disabled]="!editing"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Email</ion-label>
+          <ion-input [(ngModel)]="user.email" [disabled]="!editing"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </ng-template>
+
+  <ion-button expand="full" (click)="editing = !editing" [hidden]="editing">Edit Profile</ion-button>
+  <ion-button expand="full" (click)="saveProfile()" [hidden]="!editing">Save Profile</ion-button>
+</ion-content>

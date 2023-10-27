@@ -1,0 +1,40 @@
+/* Estilos para la página base */
+
+.page-base {
+  background-image: url('/assets/images/avatar1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-base .title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.page-base .subtitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.page-base .login-button {
+  background-color: #760997;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page-base .login-button:hover {
+  background-color: #0056b3;
+}
